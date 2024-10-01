@@ -3,13 +3,8 @@ a {
     text-decoration: none;
 }
 
-
 .pink-background{
     background-color: hotpink;
-}
-
-p{
-    background-color: green;
 }
 
 #my-name{
@@ -17,3 +12,8 @@ p{
     background-color: plum;
     padding: 10px;
 }
+
+p{
+    background-color: green;
+}
+
