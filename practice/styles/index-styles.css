@@ -1,0 +1,23 @@
+body {
+    background-color: skyblue;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main {
+    width: 800px;
+    background-color: lightcyan;
+    border: 10px dashed black;
+    margin: 0 auto;
+}
+li {
+    padding: 1rem;
+}
+li a {
+    color: black;
+    font-size: 1.25em;
+}
+li:hover {
+    background-color: lightgreen;
+}
+header {
+    text-align: center;
+}
