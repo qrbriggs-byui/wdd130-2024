@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6-4 - Grid</title>
+    <!-- 
+        display grid
+        grid-template-columns: pixels (not responsive), 
+        frational units (responsive)
+        grid-gap/column-gap/row-gap
+        nested grids        
+    -->
+    <style>
+        #grid-me{
+            background-color: white;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            /* gap: 1rem;  */
+            column-gap: 1rem;
+            row-gap: 2rem;
+            border: 2px solid black;
+        }
+        .griditem{
+            padding: .5em;
+            border: 2px solid grey;        
+        }
+        #section1{
+            background-color: lightblue;            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: .5rem;
+        }
+        #section1 p{
+            border: 1px green solid;
+        }
+        #section2{
+            background-color: lightgreen;
+        }
+        #section3{
+            background-color: pink;
+        }
+        #section4{
+            background-color: lavender;
+        }
+        #section5{
+            background-color: lightyellow;
+        }
+        #section6{
+            background-color: lightsalmon;
+        }
+        #section7{
+            background-color: rgb(255, 211, 130);
+        }
+        #section8{
+            background-color: lightgrey;
+        }
+        #section9{
+            background-color: tan;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="grid-me">
+        <div id="section1" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+        <div id="section2" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+        <div id="section3" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+        <div id="section4" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+        <div id="section5" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+        <div id="section6" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+        <div id="section7" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+        <div id="section8" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+        <div id="section9" class="griditem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus fuga quam rem modi corrupti similique aliquam accusantium voluptatem itaque?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
