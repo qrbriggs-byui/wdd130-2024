@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Component Activity</title>
+    <link rel="stylesheet" href="styles/week12.css">
+</head>
+
+<body>
+    <h1>The Awesome Baltimore Orioles!</h1>
+    <button class="accordion">A Legacy of Excellence</button>
+    <div class="panel">
+        <p>The Baltimore Orioles have been a cornerstone of Major League Baseball since their inception. Known for their
+            passionate fans and historic ballpark, Oriole Park at Camden Yards, the team has a rich history of success.
+            With nine division titles and three World Series championships, the Orioles have consistently been a symbol
+            of resilience and determination in the American League.</p>
+    </div>
+
+    <button class="accordion">The Stars of Charm City</button>
+    <div class="panel">
+        <p>Over the years, the Orioles have been home to some of baseball’s most iconic players. Legends like Cal Ripken
+            Jr., Frank Robinson, and Brooks Robinson have left an indelible mark on the franchise and the sport itself.
+            These stars, along with countless others, have built a legacy of excellence that continues to inspire the
+            next generation of Orioles players and fans.</p>
+    </div>
+
+    <button class="accordion">Looking Toward the Future</button>
+    <div class="panel">
+        <p>The Baltimore Orioles are not just about their storied past; they are a team with an eye on the future. With
+            a strong farm system and a focus on player development, the team is building a foundation for sustained
+            success. As the Orioles continue to evolve, their commitment to excellence and the passion of their fan base
+            ensure that the best days are still ahead.</p>
+    </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}    
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</body>
+
+</html>
